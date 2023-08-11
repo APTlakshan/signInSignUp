@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    user-select: none;
+}
+body{
+    background:#03a9f4 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+.background{
+    background: red;
+    transition: 0.5s ease-in-out;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    /*background: #ff0;*/
+}
+.bluebg{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    width: 100%;
+    height: 420px;
+    background: rgb(255, 255, 255,0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+
+}
+.box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+.box h2{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 500;
+}
+.box button{
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+
+}
+.formbx{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 50%;
+    height:100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+}
+.formbx .signinform{
+    transition-delay: 0.25s;
+}
+.formbx.active .signinform{
+    left: -100%;
+    transition-delay: 0s;
+}
+.active{
+    left: 50%;
+}
+.form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form h3{
+    color: #333;
+    font-size: 1.5em;
+    margin: 20px;
+    font-weight: 500;
+}
+form input{
+    width: 100;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #333;
+}
+form input[type = "submit"]{
+    background: #03a9f4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.forgot{
+
+    color: #333;
+    text-decoration: none;
+
+}
+.formbx .signupform{
+    left: 100%;
+    transition-delay: 0s;
+}
+.formbx.active .signupform{
+    left: 0;
+    transition-delay: 0.25s;
+
+}
+#register{
+    background: red;
+}
+
